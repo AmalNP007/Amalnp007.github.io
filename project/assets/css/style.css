@@ -1,6 +1,6 @@
 :root {
     --color-body: #097080;
-    --color-heading: #6c8215;
+    --color-heading: #ffffff;
     --color-base: hwb(218 2% 43% / 0.219);
     --color-base2: #022a30;
     --color-brand: #f7c080;
@@ -32,6 +32,17 @@ a:hover {
 
 img {
     width: 100%;
+}
+
+.full-height{
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid rgba(255,255,255, 0.1);
 }
 
 .text-brand {
@@ -106,4 +117,32 @@ img {
 
 
 
+    /* CONTENT WRAPPER */
+
+.head1{
+    color: var(--color-brand2);
+
+}   
+.head2{
+    color: white;
+    font-weight: 60;
+} 
+
+    #content-wrapper{
+        padding-left: var(--sidbar-width);
+    }
+     
+
+    /* CONTENT WRAPPER */
+}
+
+/*BTN*/
+.btn{
+    padding: 12px 28px;
+    font-weight: 700;
+}
+
+.btn-brand{
+    background-color: var(--color-brand);
+    border-color: var(--color-brand)
 }
