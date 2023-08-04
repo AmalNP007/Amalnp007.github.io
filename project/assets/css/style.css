@@ -1,14 +1,15 @@
-:root {
-    --color-body: #097080;
-    --color-heading: #ffffff;
-    --color-base: hwb(218 2% 43% / 0.219);
-    --color-base2: #022a30;
-    --color-brand: #f7c080;
-    --color-brand2: #deff58;
-    --sidbar-width: 240px;
-    --font-base: "Bai Jamjuree";
-}
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
 
+:root {
+    --color-body: #b6cbce;
+    --color-heading: #eef3db;
+    --color-base: #043295;
+    --color-base2: #101f2f;
+    --color-brand: #e0f780;
+    --color-brand2: #c4b840;
+    --sidbar-width: 240px;
+    --font-base: "Ubuntu";
+}
 body {
     background-color: var(--color-base2);
     color: var(--color-body);
@@ -137,12 +138,57 @@ img {
 }
 
 /*BTN*/
-.btn{
+.btn {
     padding: 12px 28px;
     font-weight: 700;
 }
 
-.btn-brand{
+.btn-brand {
     background-color: var(--color-brand);
-    border-color: var(--color-brand)
+    border-color: var(--color-brand);
+    color: var(--color-base);
 }
+
+.btn-brand:hover,
+.btn-brand:focus {
+    background-color: var(--color-brand2);
+    color: var(--color-base);
+    border-color: var(--color-brand2);
+}
+
+.link-custom{
+    font-weight: 700;
+    position: relative;
+}
+
+.link-custom::after{
+    content:  "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-brand2);
+    position: absolute;
+    left: 0;
+    top: 110%;
+    transition: all 0.9s;
+      
+}
+
+.link-custom:hover::after{
+    width:100%;
+}
+
+/* CARD */
+ .card-custom .card-custom-image{
+    overflow: hidden;
+    height: 40vh;
+
+ }
+
+ .card-custom .card-custom-image img{
+    transition: all 0.4s ease;
+ }
+
+
+ .card-custom:hover .card-custom-image img{
+    transform: scale(1.1);
+ }
