@@ -192,3 +192,11 @@ img {
  .card-custom:hover .card-custom-image img{
     transform: scale(1.1);
  }
+
+ .divE{
+    height: 30vh;
+ }
+
+ .card-custom-imageS{
+    height: 40vh;
+ }
